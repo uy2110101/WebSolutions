@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+.navbar{
+  background-color: white;
+
+}
+
+.navbar-brand{
+font-size: 1.9rem !important;
+color: rgb(221, 182, 182) !important;
+}
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active{
+  font-weight: bold !important;
+  border-bottom: 1px solid rgb(150, 89, 89) !important;
+}
+
+.navbar a:hover{
+  color: aquamarine !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+ }
+
+ .btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  transition: 0.8s;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header h2{
+  color: rgb(128, 101, 101);
+  font-size: 24px;
+}
+
+#header .brand-name{
+  color: rgb(102, 179, 214);
+}
+
+#header .animated{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{ transform: translateY(10px);}
+  100%{ transform: translateY(-10px);}
+}
+
+@keyframes up-down{
+  0%{ transform: translateY(10px);}
+  100%{ transform: translateY(-10px);}
+}
+
+@media screen and (max-width: 990px) {
+  #navbarSupportedContent .navbar-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #navbarSupportedContent{
+    display: flex;
+    justify-content: left;
+
+  }
+#header .animated{
+  width: 60%;
+} 
+}
